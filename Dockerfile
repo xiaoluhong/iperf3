@@ -11,10 +11,11 @@
 FROM alpine
 
 # install binary and remove cache
-RUN apk add --no-cache iperf3 \
-  && rm -rf /var/cache/apk/*
+
+RUN apk add --no-cache iperf3 && rm -rf /var/cache/apk/*
 
 # Expose the default iperf3 server port
+
 EXPOSE 5201
 
 # entrypoint allows you to pass your arguments to the container at runtime
