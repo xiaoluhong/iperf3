@@ -7,7 +7,6 @@
 # docker inspect --format "{{ .NetworkSettings.IPAddress }}" iperf3-srv
 # docker run  -it --rm networkstatic/iperf3 -c <SERVER_IP>
 #
-
 FROM alpine
 
 # install binary and remove cache
